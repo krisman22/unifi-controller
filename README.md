@@ -1,2 +1,2 @@
-# unifi-controller
-Self Hosting Unifi Controller to VPS
+# Unifi Controller
+ Self Hosting Unifi Controller to VPS
