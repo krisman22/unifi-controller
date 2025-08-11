@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  unifi-controller:
+    image: jacobalberty/unifi:latest
+    container_name: unifi-controller
+    restart: always
+    environment:
+      - TZ=Asia/Jakarta
+      - RUNAS_UID0=false
+      - UNIFI_UID=1000
+      - UNIFI_GID=1000
+    volumes:
+      - ./unifi-data:/unifi
+    ports:
+      - "8443:8443"     # GUI Web
+      - "8081:8080"     # Inform, kita ganti host port jadi 8085
+      - "3478:3478/udp" # STUN
+      - "10001:10001/udp"
+      - "8880:8880"
+      - "8843:8843"
+      - "6789:6789"
