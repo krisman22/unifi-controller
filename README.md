@@ -1,5 +1,7 @@
 # Unifi Controller
- Self Hosting Unifi Controller to VPS
+![Alt text](https://eu.westbase.io/wp-content/uploads/2024/01/unifi-logo.png)
+
+Self Hosting Unifi Controller to VPS
 
  ## Docker Installation
  - clone this repo
